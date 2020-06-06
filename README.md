@@ -1,2 +1,4 @@
-# coisas-pra-fazer
-provavelmente coisas que a gente vai fazer
+# Projeto
+
+<> - Aqui eu e o Miguel vamos salvar coisas úteis para nosso projeto.
+
