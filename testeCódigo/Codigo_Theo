@@ -1,0 +1,46 @@
+from time import sleep
+print(' ')
+
+
+valor = float(input('Digite o valor do produto R$: '))
+sleep(0.3)
+print(' ')
+
+vendas = int(input('Quantidade de vendas: '))
+sleep(0.3)
+print(' ')
+
+estoque = int(input('Valor do estoque: '))
+sleep(0.3)
+print(' ')
+
+
+pontos = 0 #  usado no final
+
+
+#   Preços
+
+if valor < 30: #    broxa
+    pontos += 1
+
+elif valor < 120 and valor >= 30: #meia-bomba
+    pontos += 2
+
+else: # Pica
+    pontos += 3
+
+# Vendas
+
+if vendas < 20: #   broxa
+    pontos + 1
+
+elif vendas >= 10 and vendas < 100: #   vendas
+    pontos + 2
+
+else:
+    pontos += 3
+
+
+
+
+
