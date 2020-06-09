@@ -14,7 +14,7 @@ time.sleep(0.6)
 print('')
 
 
-#   sistema das escolhas
+#   sistema das escolhas e escolhas
 while True:
     escolha = str(input('Sua escolha: '))
     print('')
