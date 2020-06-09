@@ -1,6 +1,5 @@
 print('''\nCONVERSÃO DE TEMPERATURAS
 
-
 Digite "C" para C°(Celsius) e "F" para F°(Fahrenheit).''')
 
 while True:
