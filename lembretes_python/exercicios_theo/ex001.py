@@ -1,1 +1,1 @@
-
+print('qualquer coisa')
