@@ -9,4 +9,4 @@ novo = salario +  (salario * 15 / 100)
 sleep(0.5)
 
 print('')
-print(f'O novo salário do funcionário, com 15% de aumento, fica {float(novo)}')
+print(f'O novo salário do funcionário, com 15% de aumento, fica {float(novo):.2f}')
