@@ -14,3 +14,4 @@ print(f'''
 Numero digitado: {numero}
 
 Parte inteira:{trunc(numero)} ''')
+
