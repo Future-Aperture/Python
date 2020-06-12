@@ -28,3 +28,4 @@ random.shuffle(lista)
 print('')
 time.sleep(0.5)
 print(f'A ordem de apresentação fica: {lista} ')
+
