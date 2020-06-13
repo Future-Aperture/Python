@@ -25,7 +25,7 @@ while True:
         print(f"Você terá que pagar duas parcelas de R$ {round(valor / 2, 2):.2f}.")
         break
     elif pg == '4':
-        print(f"Você terá que pagar três parcelas de R$ {round(valor / 3, 2):.2f}.")
+        print(f"Você terá que pagar três parcelas de R$ {round((valor * 1.20) / 3, 2):.2f}.")
         break
     else:
         print(f"{'-+-' * 15}\nOpção invalida, tente novamente.\n{'-+-' * 15}")
