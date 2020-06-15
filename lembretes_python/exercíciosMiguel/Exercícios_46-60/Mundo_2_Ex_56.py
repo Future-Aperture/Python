@@ -1,10 +1,6 @@
-nomes = []
-idades = []
-sexos = []
-media = 0
-mIdade = 0
+nomes = idades = sexos = []
+media = count = mIdade = 0
 mNome = ""
-count = 0
 
 for i in range(0, 4):
     print(f"----- {i + 1}° Pessoa -----")
