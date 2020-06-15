@@ -22,7 +22,7 @@ while True:
 
     if escolha.lower() == 'c':
         # celsius para fahrenheit
-        
+
         c = int(input('Quantos graus Celsius deseja converter? °'))
         f = ((9 * c) / 5) + 32
         print('')
@@ -32,13 +32,13 @@ while True:
 
     elif escolha.lower() == 'f':
         # fahrenheit para celsius
-        
+
         f = int(input('Quantos graus Fahrenheit deseja converter? °'))
         c = (f - 32) * (5 / 9)
         print('')
         time.sleep(1.0)
         print(f'O valor convertido para Celsius fica °{round(c, 2)}.')
-        
+
         break
 
     else:
@@ -46,4 +46,3 @@ while True:
         print('ERROR! Tente novamente.')
         print('')
         continue
-
