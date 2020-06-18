@@ -8,5 +8,3 @@ print("É alfanumérico?", palavra.isalnum())
 print("É em letras minuscúlas?", palavra.islower())
 print("É em letras masiúsculas?", palavra.isupper())
 print("É capitalizada?", palavra.istitle())
-
-
