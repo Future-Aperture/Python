@@ -26,4 +26,4 @@ while resposta not in 'Nn':
 print(f'''
 O total da compra de todos os itens fica {total}
 {maior1000}produtos custam mais de R$1000,00
-{min(nomeBarato)} é o produto mais barato, e ele custa {max(maisBarato)} ''')
+{min(nomeBarato)} é o produto mais barato, e ele custa {min(maisBarato)} ''')
