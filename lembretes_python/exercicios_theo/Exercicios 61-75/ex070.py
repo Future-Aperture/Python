@@ -20,8 +20,4 @@ while resposta not in 'Nn':
         maior1000 += 1
 
 
-
-
-
-
-    #maisBarato.append(preço)
+    maisBarato.append(preço)
