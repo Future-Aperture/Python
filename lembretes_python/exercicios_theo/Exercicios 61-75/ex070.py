@@ -19,5 +19,16 @@ while resposta not in 'Nn':
     if preço > 1000: # se é maior que 1000
         maior1000 += 1
 
+<<<<<<< HEAD
 
     maisBarato.append(preço)
+=======
+    # joga o nome e o preço dos itens numa lista 
+    nomeBarato.append(nome)
+    maisBarato.append(preço)
+
+print(f'''
+O total da compra de todos os itens fica {total}
+{maior1000}produtos custam mais de R$1000,00
+{min(nomeBarato)} é o produto mais barato, e ele custa {min(maisBarato)} ''')
+>>>>>>> 301320b41848ff75bcb0556cba791f5cded8c986
