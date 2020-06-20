@@ -1,3 +1,5 @@
+#«Sum of three numbers»
+
 a = int(input("Type a whole number: "))
 b = int(input("Type a whole number: "))
 c = int(input("Type a whole number: "))

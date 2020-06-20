@@ -1,3 +1,5 @@
+#«Apple sharing»
+
 kids = int(input("Insert the amount of kids:\n> "))
 apples = int(input("Insert the amount of apples\n> "))
 
