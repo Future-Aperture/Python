@@ -11,6 +11,10 @@ while opcao == "S":
         
     opcao = input("Deseja continuar? [S/N]\n> ").upper()
 
+    if not opcao in "SN":
+        print("\nOpção invalida, tente novamente.\n")
+        opcao = input("Deseja continuar? [S/N]\n> ").upper()
+
 numeros.sort()
 
 print(f"\nTodos os números digitados sem repetições são: {numeros}")
