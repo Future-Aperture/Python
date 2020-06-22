@@ -1,6 +1,6 @@
 ficha = []
 opcao = "s"
-num = 0
+num = index = 0
 
 while opcao != "n":
     nome = input("Digite o nome do aluno: ").title()
@@ -17,7 +17,7 @@ print(f"\n{'N.°':<6}{'Nome':<15}Média")
 for numero, item in enumerate(ficha):
     print(f"{numero:<6}{item[0]:<15}{item[2]}")
 
-while num != 999:
+while index != 999:
     index = int(input("\nQual aluno deseja ver as notas? [999 para sair]\n> "))
 
     if index in range(0, len(ficha)):
