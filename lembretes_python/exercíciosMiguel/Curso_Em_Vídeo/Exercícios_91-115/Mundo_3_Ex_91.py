@@ -16,5 +16,5 @@ sortedPlayers = sorted(players.items(), key = itemgetter(1), reverse = True)
 print("\nPosições de acordo com os valores sorteados:")
 
 for l in sortedPlayers:
-    print(f"{l[0]} ficou na {posicao}° com: {l[1]}")
+    print(f"    {l[0]} ficou em {posicao}° lugar com: {l[1]}")
     posicao += 1
