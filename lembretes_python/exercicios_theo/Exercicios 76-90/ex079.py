@@ -23,5 +23,4 @@ while True:
         
 
 
-
 print(f'Os números digitados foram {sorted(lista)}')

@@ -1,9 +1,10 @@
-valores = []
-valores.append(1)
-valores.append(2)
-valores.append(5)
 
+banco_de_dados = [ ]
 
-print(valores)
-for c, v in enumerate(valores):
-    print(f'Na posição {c} encontrei o valor {v}')
+JOAO = ['João', 20]
+MARIA = ['Maria', 16]
+
+banco_de_dados.append(JOAO)
+banco_de_dados.append(MARIA)
+
+print(banco_de_dados)
