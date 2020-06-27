@@ -9,9 +9,12 @@ quantidade = int(input("Quantos jogos deseja gerar?\n> "))
 print("-+" * 15)
 
 for i in range(0, quantidade):
-    for k in range(0, 6):
-        numeros.append(randint(1, 60))
+    while len(numeros) < 6:
+        temp = randint(1, 60)
+        if not temp in numeros:
+            numeros.append(temp)
 
+    numeros.sort()
     jogos.append(numeros[:])
     numeros.clear()
 
