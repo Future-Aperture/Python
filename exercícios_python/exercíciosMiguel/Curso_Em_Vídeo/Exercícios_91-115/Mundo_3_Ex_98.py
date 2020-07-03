@@ -1,6 +1,7 @@
 # O contador
 def contador(i, f, p):
     num = i
+    
     # Verifica se progressivo ou regressivo
     if i < f:
         while num <= f:
@@ -26,5 +27,6 @@ inicio = int(input("\nDigite o número inicial:\n> "))
 fim = int(input("Digite o número final:\n> "))
 passo = int(input("Digite o valor do passo:\n> "))
 
+# Printa o contador customizado
 print(f"\nContador de {inicio} à {fim}, com passo {passo}")
 contador(inicio, fim, passo)
