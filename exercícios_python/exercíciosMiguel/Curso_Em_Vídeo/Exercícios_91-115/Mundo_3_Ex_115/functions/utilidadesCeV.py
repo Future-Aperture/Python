@@ -1,3 +1,4 @@
+# Cria um header de título
 def header(txt = "MENU PRINCIPAL"):
     print(f"""
 {"-=" * 20}
@@ -5,6 +6,7 @@ def header(txt = "MENU PRINCIPAL"):
 {"-=" * 20}""")
 
 
+# Mostra o menu inteiro
 def showMenu():
     lista = "Listar Cadastros", "Cadastrar Pessoa", "Sair do Sistema"
 
@@ -14,28 +16,75 @@ def showMenu():
     print("-=" * 20)
 
 
+# Dependendo da escolha, iniciará uma função diferente
 def escolhas(num):
     if num == 1:
+        mostrarCadastros()
+
+    elif num == 2:
+        cadastrar()
+
+
+# Caso não sejá nenhuma das opções, dá "erro"
+    elif num != 3:
+        print("\n\033[0;31mDigite uma opção valida.\033[0m\n")
+        showMenu()
+
+
+# Mostra toda a lista de pessoas cadastradas
+def mostrarCadastros():
         header("LISTA DOS CADASTROS")
 
-        arquivo = open("C:\\Future_Aperture\\Python\\exercícios_python\\exercíciosMiguel\\Curso_Em_Vídeo\\Exercícios_91-115\\Mundo_3_Ex_115\\dadospessoas.txt", "r")
+        # Abre o txt
+        arquivo = open("C:\\Future_Apperture\\Python\\exercícios_python\\exercíciosMiguel\\Curso_Em_Vídeo\\Exercícios_91-115\\Mundo_3_Ex_115\\dadospessoas.txt", "r")
         lista = arquivo.read().split("\n")
 
         print(f"Nomes{'Idade':>30}\n")
 
+        #Pega cada linha do txt, e pega o nome e idade
         for i in lista:
             j = i.split(";")
 
-            print(f"{j[0]:<30}{j[1]}")
-        
+            try:
+                print(f"{j[0]:<30}{j[1]} anos")
+
+            # Se estiver vazia, avisa q n tem nada
+            except IndexError:
+                print("Não há nenhuma pessoa cadastrada.\n")
+
         print("-=" * 20)
 
+        arquivo.close()
 
-    elif num == 2:
+
+# Cadastra uma pessoa nova no txt
+def cadastrar():
         header("CADASTRO DE PESSOA")
 
+        #Abre o arquivo txt
+        arquivo = open("C:\\Future_Apperture\\Python\\exercícios_python\\exercíciosMiguel\\Curso_Em_Vídeo\\Exercícios_91-115\\Mundo_3_Ex_115\\dadospessoas.txt", "a+")
 
+        #Inputs de nome e idade
+        while True:
+            nome = input("\nDigite o nome da pessoa:\n> ")
 
-    elif num != 3:
-        print("\n\033[0;31mDigite uma opção valida.\033[0m\n")
+            try:
+                idade = int(input("\nDigite a idade da pessoa:\n> "))
+
+            #Caso n seja digitado um numero inteiro
+            except ValueError:
+                print("\n\033[0;31mDigite apenas números inteiros, tente novamente.\033[0m")
+                continue
+
+            break
+
+        arquivo.seek(0)
+
+        # Caso o txt não esteja vazia, pula uma linha
+        if len(arquivo.read(100)) > 0:
+            arquivo.write("\n")
+
+        # Adiciona o nome no final do txt
+        arquivo.write(f"{nome};{idade}")
+
         showMenu()
