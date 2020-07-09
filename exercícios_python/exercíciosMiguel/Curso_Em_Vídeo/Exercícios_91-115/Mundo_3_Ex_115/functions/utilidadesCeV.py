@@ -42,7 +42,7 @@ def mostrarCadastros():
         header("LISTA DOS CADASTROS")
 
         # Abre o txt
-        arquivo = open("C:\\Future_Apperture\\Python\\exercícios_python\\exercíciosMiguel\\Curso_Em_Vídeo\\Exercícios_91-115\\Mundo_3_Ex_115\\dadospessoas.txt", "r")
+        arquivo = open("C:\\Future_Aperture\\Python\\exercícios_python\\exercíciosMiguel\\Curso_Em_Vídeo\\Exercícios_91-115\\Mundo_3_Ex_115\\dadospessoas.txt", "r")
         lista = arquivo.read().split("\n")
 
         print(f"\033[4;34mNomes{'Idade':>30}\033[0m\n")

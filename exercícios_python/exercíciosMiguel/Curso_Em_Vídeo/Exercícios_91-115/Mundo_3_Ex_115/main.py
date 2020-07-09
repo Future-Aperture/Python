@@ -2,7 +2,7 @@ from functions.utilidadesCeV import header, showMenu, escolhas
 
 # Abre o arquivo
 try:
-    arquivo = open("C:\\Future_Apperture\\Python\\exercícios_python\\exercíciosMiguel\\Curso_Em_Vídeo\\Exercícios_91-115\\Mundo_3_Ex_115\\dadospessoas.txt", "x")
+    arquivo = open("C:\\Future_Aperture\\Python\\exercícios_python\\exercíciosMiguel\\Curso_Em_Vídeo\\Exercícios_91-115\\Mundo_3_Ex_115\\dadospessoas.txt", "x")
 except:
     print("Não foi possivel abrir o arquivo.")
 
