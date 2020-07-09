@@ -1,19 +1,25 @@
+# Cria uma linha verde
+def linha():
+    print(f'\033[0;32m{"-=" * 20}\033[0m')
+
+
 # Cria um header de título
 def header(txt = "MENU PRINCIPAL"):
-    print(f"""
-{"-=" * 20}
-{txt:^40}
-{"-=" * 20}""")
+    
+    print()
+    linha()
+    print(f"\033[0;36m{txt:^40}\033[0m")
+    linha()
 
 
 # Mostra o menu inteiro
 def showMenu():
     lista = "Listar Cadastros", "Cadastrar Pessoa", "Sair do Sistema"
 
-    print("-=" * 20)
+    linha()
     for i , j in enumerate(lista):
-        print(f"{i + 1} - {j}")
-    print("-=" * 20)
+        print(f"\033[0;33m{i + 1} - {j}\033[0m")
+    linha()
 
 
 # Dependendo da escolha, iniciará uma função diferente
@@ -39,7 +45,7 @@ def mostrarCadastros():
         arquivo = open("C:\\Future_Apperture\\Python\\exercícios_python\\exercíciosMiguel\\Curso_Em_Vídeo\\Exercícios_91-115\\Mundo_3_Ex_115\\dadospessoas.txt", "r")
         lista = arquivo.read().split("\n")
 
-        print(f"Nomes{'Idade':>30}\n")
+        print(f"\033[4;34mNomes{'Idade':>30}\033[0m\n")
 
         #Pega cada linha do txt, e pega o nome e idade
         for i in lista:
@@ -52,7 +58,7 @@ def mostrarCadastros():
             except IndexError:
                 print("Não há nenhuma pessoa cadastrada.\n")
 
-        print("-=" * 20)
+        linha()
 
         arquivo.close()
 
@@ -87,4 +93,5 @@ def cadastrar():
         # Adiciona o nome no final do txt
         arquivo.write(f"{nome};{idade}")
 
+        print()
         showMenu()

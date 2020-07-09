@@ -25,5 +25,5 @@ while True:
 
     # Caso o input seja '3', fecha o programa
     if opcao == 3:
-        print("\nSaindo do sistema, até logo.")
+        print("\n\033[7mSaindo do sistema, até logo.\033[0m")
         break
