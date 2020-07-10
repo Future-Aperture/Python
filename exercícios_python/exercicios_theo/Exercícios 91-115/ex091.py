@@ -6,7 +6,8 @@ from operator import itemgetter
 ordem = [] # => lista com os números organizados
 
 # => cálculos
-print()
+
+print('-='*20)
 jogos = {
     'jogador1':randint(1,7),
     'jogador2':randint(1,7),
@@ -23,13 +24,16 @@ for nome,num in jogos.items(): # => nome pega o 'ID'
 
 rank = sorted(jogos.items(), key=itemgetter(1), reverse=True) # => retorna em rank, de maior pra menor
  
-print('=-'*40)
+print('=-'*20)
 sleep(0.5)
 
-cont = 1 # => contador para mostrar em forma de 1°, 2°, 3° e 4°
+print()
+print(f'{"RANKING:":>20}')
+print()
+print('-='*20)
 for indice,valor in enumerate(rank):
-   print(f'{indice + 1}° lugar foi: _{valor[0]}_ que tirou _{valor[1]}_ ')
-   
+   print(f'{indice + 1}° lugar foi: {valor[0]} que tirou {valor[1]} ')
+print('-='*20)
 
 # => valor[0] = nome do colocado (ordem decresente)
 # => valor[1] = o valor que ele tirou no dado
