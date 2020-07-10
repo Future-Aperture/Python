@@ -131,3 +131,4 @@ dmypy.json
 # Other Types
 .mp3
 .exe
+.exercism
