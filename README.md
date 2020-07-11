@@ -1,4 +1,4 @@
-# Projeto
+# Repositório Python
 
-<> - Aqui eu e o Miguel vamos salvar coisas úteis para nosso projeto.
+- Guardar nossos exercícios e aprendizados sobre Python 
 
