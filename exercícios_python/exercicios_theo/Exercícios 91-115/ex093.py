@@ -32,5 +32,3 @@ print(f'O jogador {dados["nome"]}:')
 
 for key in range(dados["totalJogos"]):
     print(f'- No {key+1}° jogo, {dados["nome"]} fez {dados["gols"][key]} gols.')
-print(dados)
-    
