@@ -10,15 +10,13 @@ def collatz(number):
 
 try: 
     num = int(input("Input a whole number bigger than 1:\n> "))
-    valid = True
 
 except ValueError:
-    print("That's not a interger, please try again.")
-    valid = False
+    raise Exception("That's not a interger, please try again.")
 
-if valid:
-    if num < 1:
-        raise Exception("Please, do NOT type a number less than 1.")
 
-    while num != 1:
-        num = collatz(num)
+if num < 1:
+    raise Exception("Please, do NOT type a number less than 1.")
+
+while num != 1:
+    num = collatz(num)
