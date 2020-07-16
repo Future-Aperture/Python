@@ -7,13 +7,13 @@ media = 0
 while opcao != "n":
     # Input do nome, sexo e idade
     humano["nome"] = input("\nNome: \n> ").title()
-    humano["sexo"] = input("Sexo [M/F]: \n> ").upper()
     humano["idade"] = int(input("Idade: \n> "))
+    humano["sexo"] = input("Sexo [M/F]: \n> ").upper()
 
     # Verifica se foi inserido o sexo correto
-    if not humano["sexo"] in "MF":
-        print("\nOpção invalida, tente usar apenas 'S' ou 'N'.")
-        humano["sexo"] = input("Sexo [M/F]: \n> ")
+    while humano["sexo"] not in "MF":
+        print("\nOpção invalida, tente usar apenas 'M' ou 'F'.")
+        humano["sexo"] = input("Sexo [M/F]: \n> ").upper()
 
     pessoas.append(humano.copy())
 
@@ -22,7 +22,7 @@ while opcao != "n":
     opcao = input("\nQuer continuar? [S/N]\n> ").lower()
 
     # Verifica se foi inserido SIM ou NÃO como opcao
-    if not opcao in "sn":
+    while not opcao in "sn":
         print("Opção invalida, tente usar apenas 'S' ou 'N'.")
         opcao = input("\nQuer continuar? [S/N]\n> ").lower()
 
