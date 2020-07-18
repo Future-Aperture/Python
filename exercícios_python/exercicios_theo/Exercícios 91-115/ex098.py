@@ -36,3 +36,5 @@ passo = int(input('Passo: '))
 
 contador(inicio, fim + 1, passo)
 linha()
+
+print()
