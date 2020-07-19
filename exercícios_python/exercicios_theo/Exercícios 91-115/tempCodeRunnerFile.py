@@ -1,1 +1,1 @@
-
+lista.append(contador)
