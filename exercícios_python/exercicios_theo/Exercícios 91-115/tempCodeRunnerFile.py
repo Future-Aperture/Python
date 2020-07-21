@@ -1,1 +1,1 @@
-print(f'\nO número digitado foi {num}')
+a
