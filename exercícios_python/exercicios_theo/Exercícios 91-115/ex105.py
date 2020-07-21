@@ -35,3 +35,4 @@ while True:
 
 print(dadosGerais)
 
+# => caro Theo do futuro, só falta fazer o output bonitinho
