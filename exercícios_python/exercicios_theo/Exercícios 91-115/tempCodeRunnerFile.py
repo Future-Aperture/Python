@@ -1,1 +1,1 @@
-lista.append(contador)
+print(f'\nO número digitado foi {num}')

@@ -1,3 +1,4 @@
+
 def fatorial(num, calc = False):
     fat = 1
     
@@ -30,3 +31,8 @@ print()
 resultado = fatorial(num, calculo)
 
 print(f"\nO resultado de !{num} é {resultado}")
+             
+
+
+
+
