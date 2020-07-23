@@ -1,6 +1,5 @@
-def soma(n1,n2):
-    s = n1 + n2
-    print(s)
+# par = sim impar = nao
 
-soma(8, 10)
-soma(7, 20)
+from random import randit
+
+gerar = randit(1, 25)
