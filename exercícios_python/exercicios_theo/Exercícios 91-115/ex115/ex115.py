@@ -9,7 +9,7 @@ except:
     pass
 
 
-
+print()
 menu()
 print('-'*50)
 
@@ -39,8 +39,4 @@ while True:
     if opção == 3:
         titulo('Saindo do programa, flw e nois.')
         break
-
-    
-    else:
-        print('É SO 1, 2 OU 3 SEU IMBECIL\n')
-        continue    
+   
