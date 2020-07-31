@@ -26,8 +26,9 @@ def somaPar(lista):
         if pares % 2 == 0:
             soma += pares
     print(f'\nSomando os valores {lista}, a soma de todos os pares são: {soma}')
+
    
-    input('\npressione enter para fechar.')
+input('\npressione enter para fechar.')
 numeros = []  
 sorteioNumeros(numeros)
 somaPar(numeros)
